@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        
+        <title>Login Form</title>
+        <link rel="stylesheet" href="style.css" />
+
+        </head>
+    <body>
+        <h1>Real Time Validation Using JS</h1>
+        <hr>
+        <form id="loginForm" onsubmit="validate(event)">
+            <fieldset>
+
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                    minilength="8">
+                </div>
+
+                <div>
+                    <label for="age">Age:</label>
+
+                    <input for="number" id="age" name="age" min="12"
+                    max="50">
+                </div>
+
+                <button type="submit">Login</button>
+            </fieldset>
+            </form>
+
+            <div id="message"></div>
+
+            <script src="script.js"></script>
+
+    </body>
+</html>
